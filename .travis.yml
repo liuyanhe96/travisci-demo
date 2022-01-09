@@ -11,3 +11,17 @@ install:
 # 构建
 script:
   - npm run build
+
+deploy:
+  # Directory to push to GitHub Pages, defaults to current directory. Can be specified as an absolute path or a relative path from the current directory.
+  local_dir: dist/
+  provider: pages
+  skip_cleanup: true
+  # Set in the settings page of your repository, as a secure variable
+  # $GITHUB_TOKEN 是要设置的环境变量
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  name: liuyanhe96
+  email: yanhe.liu96@gmail.com
+  on:
+    branch: main
