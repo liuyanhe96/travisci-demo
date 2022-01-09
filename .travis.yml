@@ -20,7 +20,7 @@ deploy:
   # Set in the settings page of your repository, as a secure variable
   # $GITHUB_TOKEN 是要设置的环境变量
   github_token: $GITHUB_TOKEN
-  keep_history: true
+  keep_history: false
   name: liuyanhe96
   email: yanhe.liu96@gmail.com
   on:
